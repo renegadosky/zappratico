@@ -1,0 +1,27 @@
+# dependências / build
+node_modules
+dist
+dist-ssr
+.output
+.nitro
+.tanstack
+.vinxi
+
+# ambiente (NUNCA versionar segredos)
+.env
+.env.*
+!.env.example
+*.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# editores / SO
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?

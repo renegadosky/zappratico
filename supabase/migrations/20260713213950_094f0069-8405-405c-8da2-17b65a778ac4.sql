@@ -1,0 +1,1 @@
+ALTER TABLE public.bots ADD COLUMN IF NOT EXISTS menu_delivery TEXT NOT NULL DEFAULT 'auto' CHECK (menu_delivery IN ('auto','image','list'));

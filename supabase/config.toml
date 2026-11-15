@@ -1,0 +1,2 @@
+# Config local da Supabase CLI. Rode `supabase link --project-ref SEU_REF` para vincular ao seu projeto.
+project_id = "zappratico"

@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION public.track_official_payment() FROM anon, authenticated, PUBLIC;
