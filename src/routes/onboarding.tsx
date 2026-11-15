@@ -100,7 +100,7 @@ function Onboarding() {
     if (file.size > 3 * 1024 * 1024) return toast.error("Logo até 3MB.");
     setUploadingLogo(true);
     const ext = file.name.split(".").pop()?.toLowerCase() || "png";
-    const path = `logos/${user.id}/${Date.now()}.${ext}`;
+    const path = `${user.id}/logo-${Date.now()}.${ext}`;
     const { error } = await supabase.storage.from("product-images").upload(path, file, { upsert: true });
     if (error) {
       setUploadingLogo(false);
